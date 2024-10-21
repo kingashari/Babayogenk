@@ -10,8 +10,14 @@
 <body>
 
     <div class="container">
-        <h1>Profil Kelompok BabayoGenk!!</h1>
+        <!-- Mengganti teks nama kelompok dengan GIF -->
+        <div class="group-logo">
+            <img src="{{ url_for('static', filename='img/baba.gif') }}" alt="BabayoGenk GIF">
+        </div>
+
+
         <div class="profiles">
+            <!-- Profil anggota -->
             <div class="profile">
                 <img src="{{ url_for('static', filename='img/rizqy.jpg') }}" alt="Rizqy Muhammad Raihan">
                 <h2>Rizqy Muhammad Raihan</h2>
@@ -45,3 +51,4 @@
 
 </body>
 </html>
+
