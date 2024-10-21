@@ -2,9 +2,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #000000;
 }
 
+/* Mengatur container utama */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -12,12 +13,29 @@ body {
     padding: 20px;
 }
 
+/* Mengatur gaya judul */
 h1 {
     text-align: center;
     color: #333;
     margin-bottom: 40px;
 }
 
+/* Mengatur posisi GIF di tengah */
+.group-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Jarak dari elemen di bawahnya */
+}
+
+/* Mengatur ukuran GIF */
+.group-logo img {
+    max-width: 200%;
+    width: 500px;
+    height: auto;
+}
+
+/* Mengatur tata letak profil */
 .profiles {
     display: flex;
     flex-wrap: wrap;
@@ -58,9 +76,10 @@ h1 {
     color: #666;
     font-size: 14px;
     margin: 5px 0;
-    text-align: justify;  /* Menambahkan perataan teks kanan kiri */
+    text-align: justify;
 }
 
+/* Responsif */
 @media screen and (max-width: 768px) {
     .profiles {
         flex-direction: column;
